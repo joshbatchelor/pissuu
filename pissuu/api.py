@@ -115,6 +115,20 @@ class IssuuAPI(object):
         """
         raise NotImplementedError()
 
+    def document_embed_add(self,documentId,readerStartPage='0',height='240',width='300'):
+        """
+        List documents for this user.
+        """
+        return self._query(
+            url = 'http://api.issuu.com/1_0',
+            action = 'issuu.document_embed.add',
+            data = {
+                "documentId":documentId,
+                "readerStartPage":readerStartPage,
+                "height":height,
+                "width":width
+            }
+        )
     def _query(self, url, action, data=None):
         """
         Low-level access to the Issuu API.
