@@ -7,7 +7,7 @@ except ImportError:
 
 setup(
     name = 'pissuu',
-    version = '0.0.1',
+    version = '0.0.2',
     description = 'Python client for the Issuu API',
     long_description = open('README.rst').read() + '\n\n' + open('HISTORY.rst').read(),
     author = 'Johannes Gorset',
